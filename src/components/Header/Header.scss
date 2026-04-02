@@ -1,0 +1,37 @@
+.header {
+    padding-top: 1rem;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__burger {
+        display: none;
+    }
+
+
+    @media screen and (max-width: 1199px) {
+        &__burger {
+            display: block;
+        }
+        &__button {
+            display: none;
+        }
+        &__menu {
+            display: none;
+        }
+    }
+
+}
+
+
+
+
+.burger {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-size: 1.5rem;
+}

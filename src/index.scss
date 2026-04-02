@@ -1,0 +1,21 @@
+$primary: #0B2546;
+
+// @import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    font-family: "Manrope", sans-serif;
+    overflow-x: hidden;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.btn {
+  --bs-btn-padding-y: 0.75rem;
+  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-font-weight: 600;
+}
