@@ -1,37 +1,54 @@
 .header {
-    padding-top: 1rem;
-    &__inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  padding-top: 16px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__burger {
+    display: none;
+  }
+
+  &__button {
+    .header__cta {
+      @media (min-width: 1200px) {
+        --bs-btn-padding-y: 13px;
+        --bs-btn-padding-x: 20px;
+        --bs-btn-font-size: 16px;
+        --bs-btn-line-height: 1;
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0;
+      }
     }
+  }
+
+  @media screen and (max-width: 1199px) {
     &__burger {
-        display: none;
+      display: block;
     }
-
-
-    @media screen and (max-width: 1199px) {
-        &__burger {
-            display: block;
-        }
-        &__button {
-            display: none;
-        }
-        &__menu {
-            display: none;
-        }
+    &__button {
+      display: none;
     }
-
+    &__menu {
+      display: none;
+    }
+  }
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
-
-
-
 .burger {
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: inherit;
-    font-size: 1.5rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: 24px;
 }

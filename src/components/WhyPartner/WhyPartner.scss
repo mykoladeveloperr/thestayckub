@@ -1,0 +1,72 @@
+.why-partner.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @media (max-width: 767.98px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.why-partner {
+  background: #0b2546;
+  color: #fff;
+  overflow: hidden;
+
+  &__head {
+    margin-bottom: 48px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      "badge ."
+      "heading intro";
+    column-gap: 48px;
+    row-gap: 16px;
+    align-items: start;
+
+    @media (max-width: 991.98px) {
+      grid-template-columns: minmax(0, 1fr);
+      grid-template-areas:
+        "badge"
+        "heading"
+        "intro";
+    }
+  }
+
+  &__head-badge {
+    grid-area: badge;
+    justify-self: start;
+  }
+
+  &__head-heading {
+    grid-area: heading;
+    margin: 0;
+    color: #fff;
+  }
+
+  &__head-intro {
+    grid-area: intro;
+    text-align: left;
+
+    @media (min-width: 992px) {
+      align-self: end;
+      justify-self: end;
+      max-width: 470px;
+      width: min(470px, 100%);
+    }
+
+    @media (max-width: 991.98px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__intro {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+  }
+}

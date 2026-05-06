@@ -1,21 +1,135 @@
-$primary: #0B2546;
+$primary: #0b2546;
 
 // @import 'bootstrap/dist/css/bootstrap.min.css';
-@import 'bootstrap/scss/bootstrap.scss';
-@import 'bootstrap-icons/font/bootstrap-icons.css';
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@font-face {
+  font-family: "Right Grotesk";
+  src:
+    url("/fonts/Right%20Grotesk%20Wide%20Medium.woff2") format("woff2"),
+    url("/fonts/Right%20Grotesk%20Wide%20Medium.woff") format("woff");
+  font-weight: 400 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Right Grotesk";
+  src: url("/fonts/RightGroteskText-WideBold.woff2") format("woff2");
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Right Grotesk Compact Black";
+  src:
+    url("/fonts/Right%20Grotesk%20Compact%20Black.woff2") format("woff2"),
+    url("/fonts/Right%20Grotesk%20Compact%20Black.woff") format("woff");
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-display: "Right Grotesk Compact Black", "Right Grotesk", "Manrope", sans-serif;
+}
+
+html {
+    letter-spacing: 0;
+    overflow-x: clip;
+}
 
 body {
     font-family: "Manrope", sans-serif;
-    overflow-x: hidden;
+    overflow-x: clip;
+}
+
+#root {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+@media (min-width: 1441px) {
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl,
+    .container-xxl {
+        max-width: 1440px;
+    }
+}
+
+.section-heading {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-style: normal;
+    font-synthesis-weight: none;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: 0;
+    color: #272620;
+
+    @media (max-width: 767.98px) {
+        font-size: 28px;
+        line-height: 32px;
+    }
 }
 
 .section {
   padding: 40px 0;
+
+  @media (max-width: 767.98px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.br-1440up {
+  @media (max-width: 1439.98px) {
+    display: none;
+  }
+}
+
+.row.row-gap-3 {
+  gap: 16px;
+}
+
+.row.row-gap-4 {
+  gap: 24px;
+}
+
+.row.row-gap-4-lg-5 {
+  gap: 24px;
+
+  @media (min-width: 992px) {
+    gap: 48px;
+  }
 }
 
 .btn {
-  --bs-btn-padding-y: 0.75rem;
-  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-y: 17px;
+  --bs-btn-padding-x: 20px;
   --bs-btn-font-weight: 600;
+  --bs-btn-font-size: 14px;
+  --bs-btn-line-height: 20px;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 10px 17px;
+  border-radius: 999px;
+  background: #f8f8f7;
+  border: none;
+  color: #272620;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &--white {
+    background: #fff;
+  }
 }
