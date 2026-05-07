@@ -136,9 +136,15 @@ export default function ExpandCarousel({
   const goNext = () => goTo(Math.min(count - 1, activeIndexRef.current + 1));
   const goPrev = () => goTo(Math.max(0, activeIndexRef.current - 1));
 
-  const rootClass = className
-    ? `expand-carousel ${className}`
-    : "expand-carousel";
+  const rootClass = [
+    "expand-carousel",
+    className,
+    isBeginning ? "is-beginning" : "",
+    isEnd ? "is-end" : "",
+    activeIndex <= 1 ? "hide-left-fade" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <div className={rootClass}>
@@ -167,6 +173,8 @@ export default function ExpandCarousel({
           ))}
         </div>
       </div>
+      <div className="expand-carousel__fade expand-carousel__fade--left" />
+      <div className="expand-carousel__fade expand-carousel__fade--right" />
 
       <div className="expand-carousel__controls">
         <button

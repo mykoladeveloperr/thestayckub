@@ -46,7 +46,7 @@ export default function Hero({ children }) {
             <div className="row g-3 flex-column flex-md-row align-items-stretch">
               <div className="col-12 col-md-auto ">
                 <a
-                  href=""
+                  href="#cta"
                   className="btn btn-light rounded-pill hero__button w-100 hero__button"
                 >
                   Request Availability

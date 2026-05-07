@@ -20,24 +20,27 @@ export default function Header() {
           <div className="header__menu">
             <nav className="nav">
               <a href="" className="menu__item link">
+                Accommodation
+              </a>
+              <a href="" className="menu__item link">
+                Community
+              </a>
+              <a href="" className="menu__item link">
                 Universities
               </a>
               <a href="" className="menu__item link">
-                Study abroad providers
+                Co-Living
               </a>
               <a href="" className="menu__item link">
-                Language schools
+                Resources
               </a>
               <a href="" className="menu__item link">
-                Corporate / relocation partners
-              </a>
-              <a href="" className="menu__item link">
-                Group bookings
+                Get in touch
               </a>
             </nav>
           </div>
           <div className="header__button">
-            <a href="" className="btn btn-light rounded-pill header__cta">
+            <a href="#cta" className="btn btn-light rounded-pill header__cta">
               Request Availability
             </a>
           </div>

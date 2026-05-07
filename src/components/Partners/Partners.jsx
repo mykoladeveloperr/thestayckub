@@ -19,9 +19,11 @@ export default function Partners() {
             <div className="partners__image">
               <img src={partnersImage} alt="London skyline" />
               <div className="partners__location">
-                <i
-                  className="bi bi-geo-alt partners__location-icon"
-                  aria-hidden
+                <SvgSpriteIcon
+                  id="location"
+                  size={32}
+                  className="partners__location-icon"
+                  style={{ color: "#fff" }}
                 />
                 <span className="partners__location-label">London, UK</span>
               </div>

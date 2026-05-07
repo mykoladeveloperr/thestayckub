@@ -10,7 +10,7 @@ export default function Drawer({ isOpen, drawerToggleHandler }) {
           <Menu></Menu>
         </div>
         <div className="drawer__button">
-          <a href="" className="btn btn-primary rounded-pill w-100">
+          <a href="#cta" className="btn btn-primary rounded-pill w-100">
             Request Availability
           </a>
         </div>

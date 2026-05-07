@@ -11,7 +11,7 @@
 .studios {
   &__split {
     display: grid;
-    gap: 24px;
+    gap: 60px;
     align-items: stretch;
 
     @media (min-width: 768px) {
@@ -56,6 +56,10 @@
 
     .section-heading {
       margin-top: 16px;
+    }
+
+    @media (max-width: 767.98px) {
+      text-align: left !important;
     }
   }
 

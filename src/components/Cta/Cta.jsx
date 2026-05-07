@@ -2,10 +2,10 @@ import "./Cta.scss";
 
 export default function Cta() {
   return (
-    <section className="cta section">
+    <section className="cta section" id="cta">
       <div className="container">
-        <h2 className="section-heading text-center">
-          Tell us about your requirements
+        <h2 className="section-heading text-center cta__heading">
+        Enquire about group accommodation
         </h2>
         <div className="cta__content p-3 rounded-4 p-xl-5 rounded-xl-[16px]">
           <form className="form">
@@ -93,7 +93,7 @@ export default function Cta() {
                   className="form-control"
                   name="message"
                   id="message"
-                  placeholder="Tell us more about your programme, specific requirements or any questions..."
+                  placeholder="Enquire about group accommodation"
                 ></textarea>
               </div>
               <div className="col-12">

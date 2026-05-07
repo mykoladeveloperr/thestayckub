@@ -18,6 +18,21 @@
         margin-bottom: 96px;
     }
 
+    &__heading {
+        @media (max-width: 767.98px) {
+            font-family: "Right Grotesk Compact Black", "Right Grotesk", "Manrope", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: 0;
+            font-kerning: none;
+            font-feature-settings: "kern" 0;
+            font-variant-ligatures: none;
+            text-align: center;
+        }
+    }
+
     &__content {
         max-width: 770px;
         margin-left: auto;

@@ -34,7 +34,12 @@ $primary: #0b2546;
 }
 
 :root {
-  --font-display: "Right Grotesk Compact Black", "Right Grotesk", "Manrope", sans-serif;
+  --font-display:
+    "Right Grotesk Compact",
+    "Right Grotesk Compact Black",
+    "Right Grotesk",
+    "Manrope",
+    sans-serif;
 }
 
 html {
@@ -53,14 +58,16 @@ body {
 }
 
 @media (min-width: 1441px) {
-    .container,
-    .container-sm,
-    .container-md,
-    .container-lg,
-    .container-xl,
-    .container-xxl {
-        max-width: 1440px;
-    }
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    max-width: 1440px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 }
 
 .section-heading {
@@ -120,14 +127,17 @@ body {
 
 .section-badge {
   display: inline-block;
-  padding: 10px 17px;
+  padding: 4px 8px;
   border-radius: 999px;
   background: #f8f8f7;
   border: none;
   color: #272620;
-  font-size: 10px;
+  font-family: "Cosmica", "Manrope", sans-serif;
   font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 
   &--white {
     background: #fff;

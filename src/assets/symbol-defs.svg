@@ -71,5 +71,9 @@
         <symbol id="chevron-right" viewBox="0 0 32 32">
             <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M18.968 8l-4.983 4.983c-1.056 1.056-1.584 1.584-1.782 2.193-0.174 0.536-0.174 1.113 0 1.648 0.198 0.609 0.726 1.137 1.782 2.193l4.983 4.983"></path>
         </symbol>
+        <symbol id="location" viewBox="0 0 32 32">
+            <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M16 3c-4.969 0-9 3.837-9 8.563 0 5.438 6 14.054 8.203 17.031 0.091 0.126 0.211 0.228 0.35 0.298s0.292 0.107 0.447 0.107c0.155 0 0.309-0.037 0.447-0.107s0.258-0.173 0.35-0.298c2.203-2.975 8.203-11.589 8.203-17.031 0-4.726-4.031-8.563-9-8.563z"></path>
+            <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M16 15c1.657 0 3-1.343 3-3s-1.343-3-3-3c-1.657 0-3 1.343-3 3s1.343 3 3 3z"></path>
+        </symbol>
     </defs>
 </svg>
