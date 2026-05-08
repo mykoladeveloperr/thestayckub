@@ -9,7 +9,7 @@
   // z-index: 1;
 
   &__panel {
-    z-index: 2;
+    z-index: 1002;
     position: fixed;
     right: 0;
     top: 0;
@@ -36,10 +36,45 @@
     height: 100vh;
     opacity: 0;
     z-index: -1;
+    pointer-events: none;
   }
   &--open &__overlay {
     opacity: 1;
     transition: opacity 400ms;
-    z-index: 1;
+    z-index: 1001;
+    pointer-events: auto;
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Manrope CTA", "Manrope", "Manrope Fallback", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+    font-synthesis: none;
+    letter-spacing: -0.02rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 9999px;
+    padding: 12px 24px;
+    background: #fff;
+    color: #272620;
+    border: 1px solid #272620;
+    -webkit-font-smoothing: antialiased;
+    transition:
+      background-color 0.15s ease,
+      color 0.15s ease,
+      border-color 0.15s ease;
+
+    &:hover {
+      background: #0b2546;
+      color: #fff;
+      border-color: #0b2546;
+    }
   }
 }

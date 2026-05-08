@@ -100,7 +100,7 @@
   }
 
   &__subtitle {
-    font-family: "Manrope", sans-serif;
+    font-family: "Manrope", "Manrope Fallback", sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 100%;
@@ -116,7 +116,7 @@
   &__intro {
     color: #4a4a4a;
     margin: 0 0 32px;
-    font-family: "Manrope", sans-serif;
+    font-family: "Manrope", "Manrope Fallback", sans-serif;
     font-size: 18px;
     line-height: 22px;
 
@@ -142,7 +142,7 @@
       padding-bottom: 12px;
       border-bottom: 1px solid #f8f8f7;
       color: #1a1a1a;
-      font-family: "Manrope", sans-serif;
+      font-family: "Manrope", "Manrope Fallback", sans-serif;
       font-size: 16px;
       line-height: 22px;
       font-weight: 600;
@@ -172,7 +172,7 @@
       --bs-btn-font-size: 14px;
       --bs-btn-font-weight: 600;
       --bs-btn-line-height: 20px;
-      font-family: "Manrope", sans-serif;
+      font-family: "Manrope", "Manrope Fallback", sans-serif;
       font-weight: 600;
       font-style: normal;
       font-size: 14px;

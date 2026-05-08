@@ -1,54 +1,250 @@
+$header-nav-breakpoint: 1024px;
+$header-navy: #0b2546;
+$header-nav-hover-bg: #b9ccf3;
+
+$font-header-nav:
+  "Manrope",
+  "Manrope Fallback",
+  system-ui,
+  -apple-system,
+  "Segoe UI",
+  Roboto,
+  sans-serif;
+
+@mixin text-label-sm {
+  font-family: "Manrope", "Manrope Fallback", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
 .header {
-  padding-top: 16px;
-  &__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__burger {
-    display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+
+  &--fixed {
+    position: fixed;
   }
 
-  &__button {
-    .header__cta {
-      @media (min-width: 1200px) {
-        --bs-btn-padding-y: 13px;
-        --bs-btn-padding-x: 20px;
-        --bs-btn-font-size: 16px;
-        --bs-btn-line-height: 1;
-        font-family: "Manrope", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-        font-size: 16px;
-        line-height: 100%;
-        letter-spacing: 0;
+  &--alt-light {
+    background: transparent;
+    color: #fff;
+
+    .header__nav-item {
+      color: #fff;
+
+      &:hover {
+        background: $header-nav-hover-bg;
+        color: $header-navy;
+        opacity: 1;
       }
     }
   }
 
-  @media screen and (max-width: 1199px) {
-    &__burger {
-      display: block;
+  &--alt-dark {
+    background: transparent;
+    color: $header-navy;
+
+    .header__nav-item {
+      color: $header-navy;
+
+      &:hover {
+        background: $header-nav-hover-bg;
+        color: $header-navy;
+      }
     }
-    &__button {
-      display: none;
+  }
+
+  &--solid {
+    background: #fff;
+    color: $header-navy;
+    border-bottom: 1px solid $header-navy;
+
+    .header__nav-item {
+      color: $header-navy;
+
+      &:hover {
+        background: $header-nav-hover-bg;
+        color: $header-navy;
+      }
     }
-    &__menu {
+  }
+
+  &__banner {
+    width: 100%;
+    background: #c8e765;
+    padding: 10px 32px;
+    min-height: 41px;
+    display: flex;
+    align-items: center;
+    @include text-label-sm;
+  }
+
+  &__banner-inner {
+    flex: 1;
+    text-align: center;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: 1420px;
+    margin-inline: auto;
+    padding: 24px 32px;
+    box-sizing: border-box;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+  }
+
+  &__logo-link {
+    display: block;
+    width: max-content;
+    color: inherit;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  &__logo {
+    display: block;
+    height: 48px;
+    width: auto;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__actions-inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    align-items: center;
+    gap: 8px;
+
+    @media (min-width: $header-nav-breakpoint) {
+      display: flex;
+    }
+  }
+
+  &__nav-item {
+    @include text-label-sm;
+    font-family: $font-header-nav;
+    font-weight: 700;
+    font-synthesis: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    border-radius: 9999px;
+    transition:
+      background-color 0.15s ease,
+      color 0.15s ease,
+      opacity 0.15s ease;
+
+    &.link:hover,
+    &.link:focus-visible {
+      text-decoration: none;
+    }
+  }
+
+  &__cta {
+    display: none;
+    font-family: "Manrope CTA", "Manrope", "Manrope Fallback", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 20px;
+    font-synthesis: 700;
+    letter-spacing: -0.02rem;
+    width: 126px;
+    height: 44px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 9999px;
+    padding: 8px 18px;
+    background: $header-navy;
+    color: #fff;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    transition:
+      background-color 0.15s ease,
+      color 0.15s ease,
+      border-color 0.15s ease;
+
+    &:hover {
+      background: $header-navy;
+      color: #fff;
+      border-color: $header-navy;
+    }
+
+    @media (min-width: $header-nav-breakpoint) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--on-hero {
+      background: #fff;
+      color: #272620;
+      border-color: #272620;
+
+      &:hover {
+        background: $header-navy;
+        color: #fff;
+        border-color: $header-navy;
+      }
+    }
+  }
+
+  &__burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    border-radius: 999px;
+    color: inherit;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    @media (min-width: $header-nav-breakpoint) {
       display: none;
     }
   }
-}
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.burger {
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: inherit;
-  font-size: 24px;
 }

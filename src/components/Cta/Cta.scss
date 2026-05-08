@@ -20,7 +20,8 @@
 
     &__heading {
         @media (max-width: 767.98px) {
-            font-family: "Right Grotesk Compact Black", "Right Grotesk", "Manrope", sans-serif;
+            font-family: "Right Grotesk Compact Black", "Right Grotesk", "Manrope",
+              "Manrope Fallback", sans-serif;
             font-weight: 800;
             font-style: normal;
             font-size: 40px;

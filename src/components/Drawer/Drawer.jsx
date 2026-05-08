@@ -10,8 +10,8 @@ export default function Drawer({ isOpen, drawerToggleHandler }) {
           <Menu></Menu>
         </div>
         <div className="drawer__button">
-          <a href="#cta" className="btn btn-primary rounded-pill w-100">
-            Request Availability
+          <a href="#cta" className="drawer__cta">
+            Book a Room
           </a>
         </div>
       </div>

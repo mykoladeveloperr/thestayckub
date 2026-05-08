@@ -172,7 +172,8 @@
   }
 
   &__card-title {
-    font-family: "Right Grotesk Narrow Light", "Manrope", sans-serif;
+    font-family: "Right Grotesk Narrow Light", "Manrope", "Manrope Fallback",
+      sans-serif;
     font-weight: 400;
     font-synthesis-weight: none;
     font-size: 28px;
@@ -187,7 +188,7 @@
   }
 
   &__card-text {
-    font-family: "Manrope", sans-serif;
+    font-family: "Manrope", "Manrope Fallback", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;

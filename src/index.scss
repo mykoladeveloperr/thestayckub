@@ -3,14 +3,167 @@ $primary: #0b2546;
 // @import 'bootstrap/dist/css/bootstrap.min.css';
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* Локальні шрифти з /public/fonts */
+
+/* Manrope (TTF, окремі накреслення) */
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope Fallback";
+  src: url("/fonts/Manrope-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope Fallback";
+  src: url("/fonts/Manrope-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope Fallback";
+  src: url("/fonts/Manrope-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope Fallback";
+  src: url("/fonts/Manrope-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope Fallback";
+  src: url("/fonts/Manrope-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope Fallback";
+  src: url("/fonts/Manrope-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope Fallback";
+  src: url("/fonts/Manrope-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope CTA";
+  /* Підмножина Manrope з Next.js (tsc) */
+  src: url("/fonts/caa3a2e1cccd8315-s.p.16t1db8_9y2o.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Right Grotesk Narrow Light";
+  src:
+    url("/fonts/Right%20Grotesk%20Narrow%20Light.woff2") format("woff2"),
+    url("/fonts/Right%20Grotesk%20Narrow%20Light.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Right Grotesk";
+  src:
+    url("/fonts/Right%20Grotesk%20Tall%20Fine.woff2") format("woff2"),
+    url("/fonts/Right%20Grotesk%20Tall%20Fine.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: "Right Grotesk";
   src:
     url("/fonts/Right%20Grotesk%20Wide%20Medium.woff2") format("woff2"),
     url("/fonts/Right%20Grotesk%20Wide%20Medium.woff") format("woff");
-  font-weight: 400 600;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Right Grotesk";
+  src:
+    url("/fonts/Right%20Grotesk%20Medium.woff2") format("woff2"),
+    url("/fonts/Right%20Grotesk%20Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -18,7 +171,25 @@ $primary: #0b2546;
 @font-face {
   font-family: "Right Grotesk";
   src: url("/fonts/RightGroteskText-WideBold.woff2") format("woff2");
-  font-weight: 700 900;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Right Grotesk";
+  src:
+    url("/fonts/Right%20Grotesk%20Spatial%20Black.woff2") format("woff2"),
+    url("/fonts/Right%20Grotesk%20Spatial%20Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Right Grotesk Compact";
+  src: url("/fonts/PPRightGrotesk_CompactDark.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -28,7 +199,15 @@ $primary: #0b2546;
   src:
     url("/fonts/Right%20Grotesk%20Compact%20Black.woff2") format("woff2"),
     url("/fonts/Right%20Grotesk%20Compact%20Black.woff") format("woff");
-  font-weight: 700 900;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cosmica";
+  src: url("/fonts/CosmicaMono_Semibold.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -39,6 +218,7 @@ $primary: #0b2546;
     "Right Grotesk Compact Black",
     "Right Grotesk",
     "Manrope",
+    "Manrope Fallback",
     sans-serif;
 }
 
@@ -48,7 +228,7 @@ html {
 }
 
 body {
-    font-family: "Manrope", sans-serif;
+    font-family: "Manrope", "Manrope Fallback", system-ui, -apple-system, sans-serif;
     overflow-x: clip;
 }
 
@@ -57,14 +237,14 @@ body {
     overflow-x: clip;
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 1421px) {
   .container,
   .container-sm,
   .container-md,
   .container-lg,
   .container-xl,
   .container-xxl {
-    max-width: 1440px;
+    max-width: 1420px;
     padding-left: 64px;
     padding-right: 64px;
   }
@@ -132,7 +312,7 @@ body {
   background: #f8f8f7;
   border: none;
   color: #272620;
-  font-family: "Cosmica", "Manrope", sans-serif;
+  font-family: "Cosmica", "Manrope", "Manrope Fallback", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 12px;
