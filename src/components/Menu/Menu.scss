@@ -1,8 +1,24 @@
 .menu {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 16px;
     flex-wrap: wrap;
+
+    &__item {
+        font-family:
+            "Manrope",
+            "Manrope Fallback",
+            system-ui,
+            -apple-system,
+            "Segoe UI",
+            Roboto,
+            sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        font-synthesis: none;
+        letter-spacing: -0.02rem;
+    }
 
     @media screen and (max-width: 1199px) {
         &__item {
